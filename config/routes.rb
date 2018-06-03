@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
-  root to: 'blogs#new'
+  get '/home', to: 'blogs#home'
+  root to: 'blogs#home'
 end
 
